@@ -22,3 +22,63 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+#categories {
+  display: inline-flex;
+  padding: 24px;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 8px;
+  background: #fff;
+}
+.item {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 8px;
+  background: #f6f6fe;
+  border-color: transparent;
+}
+h2 {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-inline-start: 0px;
+}
+li {
+  list-style-type: none;
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding: 8px 315px 8px 16px;
+}
+.gallery {
+  display: flex;
+  flex-direction: row;
+  padding: 100px 156px;
+  gap: 24px;
+  background: #fff;
+}
+img {
+  width: 360px;
+  height: 300px;
+}
+.image-item {
+  border: transparent;
+  padding: 0px;
+}
