@@ -13,13 +13,14 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
-images.forEach(image => {
-  const li = document.createElement('li');
-  li.className = 'image-item';
-  const img = document.createElement('img');
+const galleryHTML = images
+  .map(
+    image => `
+  <li class="image-item">
+    <img src="${image.url}" alt="${image.alt}" />
+  </li>
+`,
+  )
+  .join('');
 
-  img.src = image.url;
-  img.alt = image.alt;
-  gallery.append(li);
-  li.append(img);
-});
+gallery.innerHTML = galleryHTML;
