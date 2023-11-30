@@ -17,3 +17,5 @@ form.addEventListener('submit', function (event) {
     form.reset();
   }
 });
+const loginButton = document.querySelector('.login-form button');
+loginButton.classList.add('login-button');
